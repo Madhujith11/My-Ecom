@@ -1,0 +1,133 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: larger;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0%;
+  z-index: 1;
+  box-shadow: 0px 0px 10px;
+  font-weight: bold;
+}
+
+header nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav a {
+  width: 100%;
+  box-shadow: 0px 0px 2.5px;
+  padding-block: 25px;
+}
+
+nav a:hover {
+  box-shadow: 0px 0px 10px;
+}
+
+.hide {
+  display: none !important;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding-inline: 15px;
+  padding-block: 5px;
+  font-size: inherit;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 50px;
+  font-size: inherit;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  width: 100%;
+  padding-block: 25px;
+  padding-inline: 25px;
+  box-shadow: 0px 0px 10px;
+}
+
+footer input {
+  font-size: inherit;
+  padding: 10px;
+  width: 500px;
+  border-radius: 10px;
+}
+
+footer i {
+  font-size: 25px;
+}
+
+footer div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+footer div i {
+  font-size: inherit;
+  position: absolute;
+  right: 5px;
+}
+
+.fa-trash {
+  display: none !important;
+  position: absolute;
+  font-size: 25px;
+  top : 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.writeblock {
+  display: none;
+}
+
+.autofill {
+  width: 500px;
+  height:fit-content;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 0px 0px 2.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.autofill p {
+  text-align: justify;
+  width: 100%;
+  padding: 10px;
+  border-bottom: solid black thin;
+  cursor: pointer;
+}
